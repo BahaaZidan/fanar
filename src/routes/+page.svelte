@@ -2,8 +2,7 @@
 	import { azkar } from '$lib';
 </script>
 
-<ul>
-	{#each azkar as zikr (zikr.id)}
-		<li><a href="/azkar/{zikr.id}">{zikr.name}</a></li>
-	{/each}
-</ul>
+<h1 class="text-xl font-bold">الأذكار</h1>
+{#each azkar as zikr (zikr.id)}
+	<a href="/azkar/{zikr.id}" class="btn btn-block">{zikr.name}</a>
+{/each}
