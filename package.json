@@ -11,7 +11,12 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
-		"lint": "prettier --check . && eslint ."
+		"lint": "prettier --check . && eslint .",
+		"cap:sync": "cap sync",
+		"cap:copy-config": "cap copy",
+		"cap:ios:run": "cap run ios",
+		"cap:ios:open": "cap open ios",
+		"cap:ios:build": "cap build ios"
 	},
 	"devDependencies": {
 		"@capacitor/cli": "^7.4.4",
@@ -37,8 +42,8 @@
 		"vite": "^7.2.2"
 	},
 	"dependencies": {
-		"@capacitor/android": "^7.4.4",
 		"@capacitor/core": "^7.4.4",
+		"@capacitor/dialog": "^7.0.2",
 		"@capacitor/ios": "^7.4.4"
 	}
 }
