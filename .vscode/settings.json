@@ -1,8 +1,5 @@
 {
-	"accessibility.verbosity.inlineChat": false,
-	"inlineChat.holdToSpeech": false,
-	"inlineChat.hideOnRequest": false,
-	"inlineChat.lineNaturalLanguageHint": false,
-	"notebook.experimental.generate": false,
-	"chat.promptFiles": false
+	"files.associations": {
+		"*.css": "tailwindcss"
+	}
 }

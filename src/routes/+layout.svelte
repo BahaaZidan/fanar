@@ -1,9 +1,12 @@
 <script lang="ts">
-	import '../app.css';
+	import './layout.css';
+	import favicon from '$lib/assets/favicon.svg';
 
 	let { children } = $props();
 </script>
 
-<div class="flex flex-col gap-2 p-4">
-	{@render children()}
-</div>
+<svelte:head>
+	<link rel="icon" href={favicon} />
+</svelte:head>
+
+{@render children()}
