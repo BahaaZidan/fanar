@@ -1,18 +1,29 @@
 <script lang="ts">
+	import { Page, Navbar, Block, Button, List, ListItem, BlockTitle } from 'konsta/svelte';
 	import { Dialog } from '@capacitor/dialog';
 
 	const showAlert = async () => {
 		await Dialog.alert({
-			title: 'Stop',
-			message: 'this is an error'
+			title: 'هوبا ؟؟؟',
+			message: 'ياللهول'
 		});
 	};
 </script>
 
-<h1 class="text-2xl">Welcome to FANAR</h1>
-<p>
-	Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentationnnnnn
-</p>
+<Page>
+	<Navbar title="My App" />
 
-<h2 class="mt-12 text-6xl">niga ???</h2>
-<button class="size-11 text-5xl" onclick={showAlert}>boom</button>
+	<Block strong>
+		<p>Here is your SvelteKit & Konsta UI app. Let's see what we have here.</p>
+	</Block>
+	<BlockTitle>Navigation</BlockTitle>
+	<List>
+		<ListItem href="/about/" title="About" />
+		<ListItem href="/form/" title="Form" />
+	</List>
+
+	<Block strong class="flex space-x-4">
+		<Button onclick={showAlert}>Button 1</Button>
+		<Button>Button 2</Button>
+	</Block>
+</Page>

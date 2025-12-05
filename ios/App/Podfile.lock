@@ -4,11 +4,14 @@ PODS:
   - CapacitorCordova (7.4.4)
   - CapacitorDialog (7.0.2):
     - Capacitor
+  - CapacitorHaptics (7.0.2):
+    - Capacitor
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/.pnpm/@capacitor+ios@7.4.4_@capacitor+core@7.4.4/node_modules/@capacitor/ios`)"
   - "CapacitorCordova (from `../../node_modules/.pnpm/@capacitor+ios@7.4.4_@capacitor+core@7.4.4/node_modules/@capacitor/ios`)"
   - "CapacitorDialog (from `../../node_modules/.pnpm/@capacitor+dialog@7.0.2_@capacitor+core@7.4.4/node_modules/@capacitor/dialog`)"
+  - "CapacitorHaptics (from `../../node_modules/.pnpm/@capacitor+haptics@7.0.2_@capacitor+core@7.4.4/node_modules/@capacitor/haptics`)"
 
 EXTERNAL SOURCES:
   Capacitor:
@@ -17,12 +20,15 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/.pnpm/@capacitor+ios@7.4.4_@capacitor+core@7.4.4/node_modules/@capacitor/ios"
   CapacitorDialog:
     :path: "../../node_modules/.pnpm/@capacitor+dialog@7.0.2_@capacitor+core@7.4.4/node_modules/@capacitor/dialog"
+  CapacitorHaptics:
+    :path: "../../node_modules/.pnpm/@capacitor+haptics@7.0.2_@capacitor+core@7.4.4/node_modules/@capacitor/haptics"
 
 SPEC CHECKSUMS:
   Capacitor: 358dd1c3fdd71d969547b17e159fd8a7736cb45f
   CapacitorCordova: bf648a636f3c153f652d312ae145fb508b6ffced
   CapacitorDialog: 5bf72a94b747fb339df6f64ef60812e5e4630ad2
+  CapacitorHaptics: b3fb2869e72c4466e18ce9ccbeb60a3d8723b3d4
 
-PODFILE CHECKSUM: 257692d7e5a6fa5da0e8593360768de050d18e54
+PODFILE CHECKSUM: 0a1197e3a6e804f5b2cb56ac4241ce2fde343b08
 
 COCOAPODS: 1.16.2
