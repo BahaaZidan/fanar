@@ -9,6 +9,6 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<App theme="ios" safeAreas dark>
+<App theme="ios">
 	{@render children()}
 </App>
