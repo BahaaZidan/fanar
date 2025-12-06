@@ -4,10 +4,17 @@ const config: CapacitorConfig = {
 	appId: 'gg.gebna.fanar',
 	appName: 'فنار',
 	webDir: 'build',
-	// SHOULD ONLY APPLY DURING DEV
+	// TODO: SHOULD ONLY APPLY DURING DEV
 	server: {
 		url: 'http://192.168.1.100:5169/',
 		cleartext: true
+	},
+	plugins: {
+		SplashScreen: {
+			launchShowDuration: 1000,
+			launchAutoHide: false,
+			launchFadeOutDuration: 1000
+		}
 	}
 };
 

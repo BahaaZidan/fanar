@@ -2,31 +2,30 @@
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import { App } from 'konsta/svelte';
-	import { Capacitor } from '@capacitor/core';
-	import { onMount } from 'svelte';
+	// import { Capacitor } from '@capacitor/core';
 
 	let { children } = $props();
-	let isDark = $state(false);
-	onMount(() => {
-		// Check initial preference
-		const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-		isDark = mediaQuery.matches;
+	// let isDark = $state(false);
+	// onMount(() => {
+	// 	// Check initial preference
+	// 	const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+	// 	isDark = mediaQuery.matches;
 
-		// Listen for changes
-		const listener = (event: MediaQueryListEvent) => {
-			isDark = event.matches;
-		};
-		mediaQuery.addEventListener('change', listener);
+	// 	// Listen for changes
+	// 	const listener = (event: MediaQueryListEvent) => {
+	// 		isDark = event.matches;
+	// 	};
+	// 	mediaQuery.addEventListener('change', listener);
 
-		// Cleanup
-		return () => mediaQuery.removeEventListener('change', listener);
-	});
+	// 	// Cleanup
+	// 	return () => mediaQuery.removeEventListener('change', listener);
+	// });
 </script>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<App theme={Capacitor.getPlatform() === 'ios' ? 'ios' : 'material'} class={{ dark: isDark }}>
+<App theme="ios" class="dark">
 	{@render children()}
 </App>

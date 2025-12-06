@@ -1,8 +1,8 @@
-- [x] Default to ios/material theme based on platform
-- [x] Default to dark/light based on user device theme
+- [ ] FIX: App state resets when I switch to another app and get back to it
+- [ ] Default to ios/material theme based on platform
+- [ ] Default to dark/light based on user device theme
 - [ ] Use the ViewTransition API between pages
 - [ ] CSS animations inside the dikr page
 - [ ] Prevent user from being able to highlight or copy content
 - [x] App Icon
-- [ ] App splash screen
-- [ ] Fix color flicker and layout shift on startup
+- [x] App splash screen
