@@ -1,6 +1,8 @@
 - [x] Default to ios/material theme based on platform
-- [ ] Default to dark/light based on user device theme
+- [x] Default to dark/light based on user device theme
 - [ ] Use the ViewTransition API between pages
-- [ ] CSS animations inside the
+- [ ] CSS animations inside the dikr page
 - [ ] Prevent user from being able to highlight or copy content
-- [ ]
+- [ ] App Icon
+- [ ] App splash screen
+- [ ] Fix color flicker and layout shift on startup
