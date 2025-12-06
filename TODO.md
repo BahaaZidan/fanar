@@ -1,5 +1,5 @@
-- [ ] Allow users to switch between light/dark
-- [ ] Default to dark based on user device theme
+- [x] Default to ios/material theme based on platform
+- [ ] Default to dark/light based on user device theme
 - [ ] Use the ViewTransition API between pages
 - [ ] CSS animations inside the
 - [ ] Prevent user from being able to highlight or copy content
