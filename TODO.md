@@ -1,6 +1,7 @@
-- [ ] FIX: App state resets when I switch to another app and get back to it
-- [ ] Default to ios/material theme based on platform
-- [ ] Default to dark/light based on user device theme
+- [x] FIX: App state resets when I switch to another app and get back to it
+  - Turns out: not a problem. We just need to always disable the server\*
+- [x] Default to ios/material theme based on platform
+- [x] Default to dark/light based on user device theme
 - [ ] Use the ViewTransition API between pages
 - [ ] CSS animations inside the dikr page
 - [ ] Prevent user from being able to highlight or copy content
