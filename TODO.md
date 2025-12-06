@@ -3,6 +3,6 @@
 - [ ] Use the ViewTransition API between pages
 - [ ] CSS animations inside the dikr page
 - [ ] Prevent user from being able to highlight or copy content
-- [ ] App Icon
+- [x] App Icon
 - [ ] App splash screen
 - [ ] Fix color flicker and layout shift on startup
