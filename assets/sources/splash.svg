@@ -1,0 +1,46 @@
+<svg width="2732" height="2732" viewBox="0 0 2732 2732"
+     xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lightBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5F0E8"/>
+      <stop offset="100%" stop-color="#ECE3D6"/>
+    </linearGradient>
+    <linearGradient id="towerGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#D9E0EC"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2732" height="2732" fill="url(#lightBg)" />
+
+  <!-- Horizon -->
+  <rect x="0" y="1700" width="2732" height="400" fill="#D4DCE8" opacity="0.4" />
+  <rect x="0" y="1800" width="2732" height="400" fill="#C4D0E0" opacity="0.5" />
+
+  <!-- Centered Lighthouse -->
+  <g transform="translate(1366 1420)">
+    <!-- Light beam -->
+    <path d="M0 -500 L1200 -200 L1200 150 L0 0 Z" fill="#FFC94A" opacity="0.9" />
+
+    <!-- Rock -->
+    <ellipse cx="0" cy="320" rx="380" ry="120" fill="#23324A" opacity="0.9" />
+
+    <!-- Tower -->
+    <rect x="-120" y="-200" width="240" height="520" rx="80" fill="url(#towerGradient)" />
+    <rect x="-140" y="-240" width="280" height="80" rx="32" fill="#E2E6F0" />
+
+    <!-- Stripes -->
+    <rect x="-120" y="-120" width="240" height="40" fill="#C1CEDF" opacity="0.8" />
+    <rect x="-120" y="-20"  width="240" height="40" fill="#C1CEDF" opacity="0.65" />
+    <rect x="-120" y="80"   width="240" height="40" fill="#C1CEDF" opacity="0.5" />
+
+    <!-- Lantern -->
+    <rect x="-120" y="-320" width="240" height="100" rx="38" fill="#1B2945" />
+    <rect x="-90"  y="-304" width="180" height="64" rx="28" fill="#FFE789" />
+
+    <!-- Dome -->
+    <circle cx="0" cy="-344" r="40" fill="#FFFFFF" />
+    <rect x="-6" y="-420" width="12" height="72" rx="6" fill="#FFFFFF" />
+  </g>
+</svg>

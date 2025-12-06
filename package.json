@@ -16,9 +16,11 @@
 		"cap:copy-config": "cap copy",
 		"cap:ios:run": "cap run ios",
 		"cap:ios:open": "cap open ios",
-		"cap:ios:build": "cap build ios"
+		"cap:ios:build": "cap build ios",
+		"cap:assets": "capacitor-assets generate"
 	},
 	"devDependencies": {
+		"@capacitor/assets": "^3.0.5",
 		"@capacitor/cli": "^7.4.4",
 		"@eslint/compat": "^1.4.0",
 		"@eslint/js": "^9.39.1",
@@ -46,6 +48,7 @@
 		"@capacitor/dialog": "^7.0.2",
 		"@capacitor/haptics": "^7.0.2",
 		"@capacitor/ios": "^7.4.4",
-		"konsta": "^5.0.6"
+		"konsta": "^5.0.6",
+		"sharp": "^0.34.5"
 	}
 }

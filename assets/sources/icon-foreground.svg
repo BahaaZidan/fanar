@@ -1,0 +1,36 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024"
+     xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="towerGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDFDFD"/>
+      <stop offset="100%" stop-color="#D9E0EC"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Transparent background -->
+  <rect x="0" y="0" width="1024" height="1024" fill="none" />
+
+  <!-- Light beam -->
+  <path d="M512 260 L1024 392 L1024 640 L512 540 Z"
+        fill="#FFC94A" opacity="0.9" />
+
+  <!-- Lighthouse tower -->
+  <rect x="452" y="340" width="120" height="280" rx="40" fill="url(#towerGradient)" />
+  <rect x="442" y="320" width="140" height="40" rx="18" fill="#E2E6F0" />
+
+  <!-- Stripes -->
+  <rect x="452" y="390" width="120" height="24" fill="#C1CEDF" opacity="0.8" />
+  <rect x="452" y="450" width="120" height="24" fill="#C1CEDF" opacity="0.6" />
+  <rect x="452" y="510" width="120" height="24" fill="#C1CEDF" opacity="0.45" />
+
+  <!-- Lantern room -->
+  <rect x="452" y="300" width="120" height="60" rx="22" fill="#1B2945" />
+  <rect x="470" y="308" width="84" height="36" rx="16" fill="#FFE789" />
+
+  <!-- Top dome -->
+  <circle cx="512" cy="292" r="26" fill="#FDFDFD" />
+  <rect x="508" y="250" width="8" height="40" rx="4" fill="#FDFDFD" />
+
+  <!-- Rock base -->
+  <ellipse cx="512" cy="700" rx="220" ry="70" fill="#061a30" opacity="0.95" />
+</svg>
