@@ -2,3 +2,24 @@
 @import 'konsta/svelte/theme.css';
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+html,
+body {
+	-webkit-user-select: none; /* Disable selection in iOS Safari / WKWebView */
+	user-select: none; /* Standard property */
+	-webkit-touch-callout: none; /* Hide the copy/share popup on long press */
+}
+
+/* Stop links from being draggable / drag-highlighted */
+a {
+	-webkit-user-drag: none; /* iOS / Safari / WKWebView */
+	user-drag: none; /* Non-standard but harmless elsewhere */
+	-webkit-touch-callout: none;
+}
+
+/* Optional: remove tap highlight flash */
+a,
+a:focus,
+a:active {
+	-webkit-tap-highlight-color: transparent;
+}

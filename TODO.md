@@ -4,6 +4,6 @@
 - [x] Default to dark/light based on user device theme
 - [ ] Use the ViewTransition API between pages
 - [ ] CSS animations inside the dikr page
-- [ ] Prevent user from being able to highlight or copy content
+- [x] Prevent user from being able to highlight or copy content
 - [x] App Icon
 - [x] App splash screen
