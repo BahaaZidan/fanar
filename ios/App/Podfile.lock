@@ -6,15 +6,12 @@ PODS:
     - Capacitor
   - CapacitorHaptics (7.0.2):
     - Capacitor
-  - CapacitorSplashScreen (7.0.3):
-    - Capacitor
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/.pnpm/@capacitor+ios@7.4.4_@capacitor+core@7.4.4/node_modules/@capacitor/ios`)"
   - "CapacitorCordova (from `../../node_modules/.pnpm/@capacitor+ios@7.4.4_@capacitor+core@7.4.4/node_modules/@capacitor/ios`)"
   - "CapacitorDialog (from `../../node_modules/.pnpm/@capacitor+dialog@7.0.2_@capacitor+core@7.4.4/node_modules/@capacitor/dialog`)"
   - "CapacitorHaptics (from `../../node_modules/.pnpm/@capacitor+haptics@7.0.2_@capacitor+core@7.4.4/node_modules/@capacitor/haptics`)"
-  - "CapacitorSplashScreen (from `../../node_modules/.pnpm/@capacitor+splash-screen@7.0.3_@capacitor+core@7.4.4/node_modules/@capacitor/splash-screen`)"
 
 EXTERNAL SOURCES:
   Capacitor:
@@ -25,16 +22,13 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/.pnpm/@capacitor+dialog@7.0.2_@capacitor+core@7.4.4/node_modules/@capacitor/dialog"
   CapacitorHaptics:
     :path: "../../node_modules/.pnpm/@capacitor+haptics@7.0.2_@capacitor+core@7.4.4/node_modules/@capacitor/haptics"
-  CapacitorSplashScreen:
-    :path: "../../node_modules/.pnpm/@capacitor+splash-screen@7.0.3_@capacitor+core@7.4.4/node_modules/@capacitor/splash-screen"
 
 SPEC CHECKSUMS:
   Capacitor: 358dd1c3fdd71d969547b17e159fd8a7736cb45f
   CapacitorCordova: bf648a636f3c153f652d312ae145fb508b6ffced
   CapacitorDialog: 5bf72a94b747fb339df6f64ef60812e5e4630ad2
   CapacitorHaptics: b3fb2869e72c4466e18ce9ccbeb60a3d8723b3d4
-  CapacitorSplashScreen: e388b8e0ed0e982a9d3a40417f478e7a018a8763
 
-PODFILE CHECKSUM: 25c8b524d9a6f4ac8611c834f77ed9191d5b314a
+PODFILE CHECKSUM: 0a1197e3a6e804f5b2cb56ac4241ce2fde343b08
 
 COCOAPODS: 1.16.2
