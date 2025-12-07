@@ -71,4 +71,16 @@
 			view-transition-name: var(--dikr_title);
 		}
 	}
+
+	progress {
+		--progress-speed: 200ms;
+	}
+
+	progress::-webkit-progress-value {
+		transition: width var(--progress-speed) ease;
+	}
+
+	progress::-moz-progress-bar {
+		transition: width var(--progress-speed) ease;
+	}
 </style>
