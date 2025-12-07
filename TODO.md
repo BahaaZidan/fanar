@@ -2,8 +2,11 @@
   - Turns out: not a problem. We just need to always disable the server\*
 - [x] Default to ios/material theme based on platform
 - [x] Default to dark/light based on user device theme
-- [ ] Use the ViewTransition API between pages
-- [ ] CSS animations inside the dikr page
 - [x] Prevent user from being able to highlight or copy content
 - [x] App Icon
 - [x] App splash screen
+- [x] Migrate from Konsta to DaisyUI
+- [x] Handle SafeAreas in Tailwind
+- [x] Use the ViewTransition API between pages
+- [ ] CSS animations inside the dikr page
+- [ ] Consider locking screen orientation to vertical

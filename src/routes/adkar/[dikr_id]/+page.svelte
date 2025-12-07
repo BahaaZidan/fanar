@@ -1,7 +1,10 @@
 <script lang="ts">
-	import { Page, Navbar, NavbarBackLink, Progressbar, Card } from 'konsta/svelte';
-	import type { PageProps } from './$types';
-	import { Haptics } from '@capacitor/haptics';
+	import { Haptics } from "@capacitor/haptics";
+	import ArrowRightIcon from "@lucide/svelte/icons/arrow-right";
+
+	import { resolve } from "$app/paths";
+
+	import type { PageProps } from "./$types";
 
 	let { data }: PageProps = $props();
 	let progress = $state(
@@ -22,29 +25,45 @@
 	};
 </script>
 
-<Page>
-	<Navbar title={data.dikr.label}>
-		{#snippet left()}
-			<NavbarBackLink onclick={() => history.back()} />
-		{/snippet}
-	</Navbar>
-	{#each adkar as dikr (dikr.dikr)}
-		<Card
-			outline
-			headerDivider
-			footerDivider
-			onclick={() => handleDikrClick(dikr.dikr, dikr.repetition)}
-		>
-			{#snippet header()}
-				{dikr.dikr}
-			{/snippet}
-			{#snippet footer()}
-				{dikr.repetition}
-				<Progressbar
-					progress={(progress.find((p) => p.id === dikr.dikr)?.current ?? 0) / dikr.repetition}
-				/>
-			{/snippet}
+<div class="navbar bg-base-100 shadow-sm">
+	<div class="navbar-start">
+		<a href={resolve("/")} class="btn btn-circle btn-xl">
+			<ArrowRightIcon class="size-7" />
+		</a>
+	</div>
+	<div class="navbar-center">
+		<div class="btn text-xl btn-ghost" style:--dikr_title="dikr-{data.dikr.id}">
+			{data.dikr.label}
+		</div>
+	</div>
+	<div class="navbar-end"></div>
+</div>
+
+{#each adkar as dikr (dikr.dikr)}
+	<button
+		class="flex flex-col gap-1 p-4"
+		onclick={() => handleDikrClick(dikr.dikr, dikr.repetition)}
+	>
+		<div class="text-lg font-bold">
+			{dikr.dikr}
+		</div>
+		<div>
 			{dikr.sourceAndReward}
-		</Card>
-	{/each}
-</Page>
+		</div>
+		<div>
+			<progress
+				class="progress w-full"
+				value={progress.find((p) => p.id === dikr.dikr)?.current ?? 0}
+				max={dikr.repetition}
+			></progress>
+		</div>
+	</button>
+{/each}
+
+<style>
+	.navbar-center {
+		& div {
+			view-transition-name: var(--dikr_title);
+		}
+	}
+</style>

@@ -1,13 +1,68 @@
-@import 'tailwindcss';
-@import 'konsta/svelte/theme.css';
+/* Local Amiri font (offline) */
+@font-face {
+	font-family: "Amiri";
+	src: url("/fonts/Amiri/Amiri-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
 
-@custom-variant dark (&:where(.dark, .dark *));
+@font-face {
+	font-family: "Amiri";
+	src: url("/fonts/Amiri/Amiri-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Amiri";
+	src: url("/fonts/Amiri/Amiri-Italic.ttf") format("truetype");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Amiri";
+	src: url("/fonts/Amiri/Amiri-BoldItalic.ttf") format("truetype");
+	font-weight: 700;
+	font-style: italic;
+}
+
+/* Now pull in Tailwind v4 */
+@import "tailwindcss";
+
+@theme {
+	--font-amiri: "Amiri", serif;
+}
+
+@plugin "daisyui" {
+	themes: retro;
+}
+
+@layer utilities {
+	.pt-safe {
+		padding-top: env(safe-area-inset-top);
+	}
+	.pb-safe {
+		padding-bottom: env(safe-area-inset-bottom);
+	}
+	.pl-safe {
+		padding-left: env(safe-area-inset-left);
+	}
+	.pr-safe {
+		padding-right: env(safe-area-inset-right);
+	}
+}
+
+:root {
+	/* view-transition-name: none; */
+}
 
 html,
 body {
 	-webkit-user-select: none; /* Disable selection in iOS Safari / WKWebView */
 	user-select: none; /* Standard property */
 	-webkit-touch-callout: none; /* Hide the copy/share popup on long press */
+	height: 100%;
 }
 
 /* Stop links from being draggable / drag-highlighted */
