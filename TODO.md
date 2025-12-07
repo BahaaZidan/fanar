@@ -9,4 +9,12 @@
 - [x] Handle SafeAreas in Tailwind
 - [x] Use the ViewTransition API between pages
 - [x] Animate deleting item from list in Dikr details page
-- [ ] Consider locking screen orientation to vertical
+- [x] Lock screen orientation to vertical
+- [ ] UI polish
+- [ ] Data entry
+- [ ] Android support
+- [ ] Lock orientation to portrait in Android
+- [ ] Developer accounts in both
+- [ ] Submit the app for publishing
+- [ ] Setup CI/CD flows to automatically submit updates on commit to master
+- [ ]
