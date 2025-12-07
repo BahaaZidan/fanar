@@ -1,9 +1,8 @@
 <script lang="ts">
-	import { flip } from "svelte/animate";
-	import { scale } from "svelte/transition";
-
 	import { Haptics } from "@capacitor/haptics";
 	import ArrowRightIcon from "@lucide/svelte/icons/arrow-right";
+	import { flip } from "svelte/animate";
+	import { scale } from "svelte/transition";
 
 	import { resolve } from "$app/paths";
 
@@ -28,9 +27,9 @@
 	};
 </script>
 
-<div class="navbar bg-base-100 shadow-sm">
+<div class="pt-safe navbar sticky top-0 z-50 bg-base-100/70 shadow-sm backdrop-blur-xs">
 	<div class="navbar-start">
-		<a href={resolve("/")} class="btn btn-circle btn-xl">
+		<a href={resolve("/")} class="btn btn-circle btn-ghost btn-xl">
 			<ArrowRightIcon class="size-7" />
 		</a>
 	</div>
@@ -43,8 +42,9 @@
 </div>
 
 {#each adkar as dikr (dikr.dikr)}
+	{@const value = progress.find((p) => p.id === dikr.dikr)?.current ?? 0}
 	<button
-		class="flex flex-col gap-1 p-4"
+		class="mb-2 flex flex-col gap-1 bg-base-200 p-4"
 		onclick={() => handleDikrClick(dikr.dikr, dikr.repetition)}
 		animate:flip={{ duration: 200 }}
 		out:scale={{ duration: 200, start: 0.85, opacity: 0 }}
@@ -56,11 +56,7 @@
 			{dikr.sourceAndReward}
 		</div>
 		<div>
-			<progress
-				class="progress w-full"
-				value={progress.find((p) => p.id === dikr.dikr)?.current ?? 0}
-				max={dikr.repetition}
-			></progress>
+			<progress class="progress w-full" {value} max={dikr.repetition}></progress>
 		</div>
 	</button>
 {/each}

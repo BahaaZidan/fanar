@@ -23,6 +23,6 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class="pt-safe pb-safe flex min-h-screen flex-col">
+<div class="pb-safe flex min-h-screen flex-col">
 	{@render children()}
 </div>
