@@ -1,4 +1,7 @@
 <script lang="ts">
+	import { flip } from "svelte/animate";
+	import { scale } from "svelte/transition";
+
 	import { Haptics } from "@capacitor/haptics";
 	import ArrowRightIcon from "@lucide/svelte/icons/arrow-right";
 
@@ -43,6 +46,8 @@
 	<button
 		class="flex flex-col gap-1 p-4"
 		onclick={() => handleDikrClick(dikr.dikr, dikr.repetition)}
+		animate:flip={{ duration: 200 }}
+		out:scale={{ duration: 200, start: 0.85, opacity: 0 }}
 	>
 		<div class="text-lg font-bold">
 			{dikr.dikr}

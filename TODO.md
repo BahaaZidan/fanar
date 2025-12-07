@@ -8,5 +8,5 @@
 - [x] Migrate from Konsta to DaisyUI
 - [x] Handle SafeAreas in Tailwind
 - [x] Use the ViewTransition API between pages
-- [ ] CSS animations inside the dikr page
+- [x] Animate deleting item from list in Dikr details page
 - [ ] Consider locking screen orientation to vertical
